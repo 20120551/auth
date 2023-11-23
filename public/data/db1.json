@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "username": "vinhphuc@gmail.com",
+      "password": "$2b$10$/fNmM6pLKBcwVGI3a6JVGeQV76Zbkp8wr6vsXOreVZ6TdOgfckQC.",
+      "id": "7d04a42a-8a68-4356-9f52-99e0619d51eb"
+    },
+    {
+      "username": "vinhphuc123@gmail.com",
+      "password": "$2b$10$Ddif0Ds707oDlV1q2u9g2u7dg8rZmu.wdhglZcbOTvDMB1xyIZ3Wa",
+      "id": "9860d560-a835-4751-aaa1-f3db0833f0eb"
+    },
+    {
+      "username": "phuc123@gmail.com",
+      "password": "$2b$10$eXQA23ESG609tYXs9LwFS.YhV20q2fzJ85ZrqnBTYQRyD9FvdYmhC",
+      "id": "09de29df-0447-40a4-9e57-07c152821ce1"
+    },
+    {
+      "username": "phuc1234@gmail.com",
+      "password": "$2b$10$VEvVuM2MdVLxVQb/OjV5rOg.PQzhLNA8PLEqVD2wEKxF8127muHXu",
+      "id": "a627ff4a-4bb0-4f30-8d24-f2d98830df75"
+    },
+    {
+      "username": "phuc12345@gmail.com",
+      "password": "$2b$10$TsPuqXVuimZRIpb57mj.VOcHLTTQjoSSCkDYkR2DlWkgv8e7jLaw.",
+      "id": "046cdb19-a352-4530-87a2-924c78429142"
+    },
+    {
+      "username": "phuc123425@gmail.com",
+      "password": "$2b$10$Hhb2cjTfQsdvVV4xRipqA.G7o0dlRRJ5zjE6TIVYhlbVhJFqGlGvK",
+      "id": "419d3caa-9683-4034-a29a-d198944d29bf"
+    }
+  ]
+}

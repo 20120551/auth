@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "username": "phuc12@gmail.com",
+      "password": "$2b$10$QghyhuMRYb//OhGI4k/w1O0XV2m.dO/Gpds3UXwUwHAb/pqkXvnxm"
+    },
+    {
+      "username": "vinhphucit02@gmail.com",
+      "password": "$2b$10$TvltJx8n18C.uSLV.TXW2OjEwNyvfqMcXsVLU5kpUJl/ZfSKUF6OS"
+    },
+    {
+      "username": "phuc123@gmail.com",
+      "password": "$2b$10$iIzr945Io7HBwsT4sctbje3F1Kdwr62e1vTEw6TVX1yJvV9IdJQxe"
+    },
+    {
+      "username": "phuc123",
+      "password": "$2b$10$aovsdsHtru3.tAEDywO.huJYXgZKkrpxpvyngk1Ra3sB5oQ.Ctkp6"
+    },
+    {
+      "username": "phuc1232",
+      "password": "$2b$10$B9lMR3OXUZ/SY1LTxZZBueLsJzQv93Vh1Bj1HG5pDXrZA8Uows4.e"
+    },
+    {
+      "username": "phuc1234",
+      "password": "$2b$10$UC3b0LZMalmZBS1473Mug.u36QCsR37sdLWu2IoANLKn/i5hGUsTO"
+    },
+    {
+      "username": "phuc12345",
+      "password": "$2b$10$IKeOOb6uosRzvlykc9zjJOaoxNQ88JmntM3ueDqHy8I3bJgT4lc4m"
+    }
+  ]
+}

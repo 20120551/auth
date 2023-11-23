@@ -1,0 +1,14 @@
+version: "3"
+services:
+  auth:
+    container_name: auth
+    image: "test-webpack"
+    environment:
+      CONNECTION_STRING: "public/data/db.json"
+      GRAPHQL_CONNECTION_STRING: "public/data/db1.json"
+      JWT_PRIVATE_KEY: "key"
+      NODE_ENV: "production"
+      PORT: 80
+      HOST: "0.0.0.0"
+      HASURA_CLOUD_ENDPOINT: "https://useful-skunk-53.hasura.app/v1/graphql"
+      HASURA_ADMIN_SECRET: "secret"

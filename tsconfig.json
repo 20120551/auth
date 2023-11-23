@@ -1,0 +1,54 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "CommonJS",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "rootDir": "./src",
+        "composite": true,
+        "outDir": "./dist",
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": false,
+        "skipLibCheck": true,
+        "paths": {
+            "@root/*": [
+                "./src/*"
+            ],
+            "@config/*": [
+                "./src/config/*"
+            ],
+            "@lib/*": [
+                "./src/lib/*"
+            ],
+            "@graphql/*": [
+                "./src/graphql/*"
+            ],
+            "@server/*": [
+                "./src/server/*"
+            ],
+            "@plugin/*": [
+                "./src/plugin/*"
+            ],
+            "@middleware/*": [
+                "./src/middleware/*"
+            ]
+        },
+        "types": [
+            "jest"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules",
+        // "src/**/__test__/**/*"
+    ]
+}
