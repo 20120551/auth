@@ -10,7 +10,7 @@
     "build": "npm run build:webpack",
     "start": "node dist/index.js",
     "test": "jest --verbose",
-    "build:webpack": "webpack"
+    "build:webpack": "node --inspect ./node_modules/webpack-cli/bin/cli.js"
   },
   "_moduleAliases": {
     "@root": "dist",

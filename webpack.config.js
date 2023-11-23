@@ -5,12 +5,13 @@ module.exports = {
     mode: "production",
     target: "node",
     entry: {
-        app: "./src/index.ts"
+        app: "./src/functions/server.ts"
     },
     output: {
-        filename: "index.js",
-        path: path.join(__dirname, "dist"),
+        filename: "server.js",
+        path: path.join(__dirname, "dist/functions"),
         clean: true,
+        libraryTarget: 'commonjs2'
     },
     module: {
         rules: [{
@@ -20,25 +21,19 @@ module.exports = {
         }]
     },
     devtool: "source-map",
-    // devServer: {
-    //     server: "http",
-    //     static: {
-    //         directory: path.join(__dirname, "dist"),
-    //     },
-    //     compress: true,
-    //     port: 3000
-    // },
     resolve: {
+        symlinks: false,
+        cacheWithContext: false,
         extensions: [".ts", ".js"],
-        // alias: {
-        //     "@root": path.resolve(__dirname, "src"),
-        //     "@config": path.resolve(__dirname, "src/config"),
-        //     "@lib": path.resolve(__dirname, "src/lib"),
-        //     "@plugin": path.resolve(__dirname, "src/plugin"),
-        //     "@middleware": path.resolve(__dirname, "src/middleware"),
-        //     "@graphql": path.resolve(__dirname, "src/graphql"),
-        //     "@server": path.resolve(__dirname, "src/server")
-        // },
+        alias: {
+            "@root": path.resolve(__dirname, "dist"),
+            "@config": path.resolve(__dirname, "dist/config"),
+            "@lib": path.resolve(__dirname, "dist/lib"),
+            "@plugin": path.resolve(__dirname, "dist/plugin"),
+            "@middleware": path.resolve(__dirname, "dist/middleware"),
+            "@graphql": path.resolve(__dirname, "dist/graphql"),
+            "@server": path.resolve(__dirname, "dist/server")
+        },
         plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })]
     }
 }

@@ -16,6 +16,9 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": false,
         "skipLibCheck": true,
+        "typeRoots": [
+            "node_modules/@types",
+        ],
         "paths": {
             "@root/*": [
                 "./src/*"
@@ -44,11 +47,12 @@
         ]
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "./**/*.ts"
     ],
     "exclude": [
         "dist",
         "node_modules",
-        // "src/**/__test__/**/*"
+
     ]
 }
