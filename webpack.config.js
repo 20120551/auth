@@ -1,5 +1,6 @@
 const path = require("path");
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -17,7 +18,11 @@ module.exports = {
         rules: [{
             exclude: /node_modules/,
             test: /\.ts$/,
-            use: ["ts-loader"]
+            loader: "ts-loader",
+            options: {
+                transpileOnly: true,
+                // experimentalWatchApi: true,
+            }
         }]
     },
     devtool: "source-map",
@@ -34,6 +39,16 @@ module.exports = {
             "@graphql": path.resolve(__dirname, "dist/graphql"),
             "@server": path.resolve(__dirname, "dist/server")
         },
-        plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })]
+        plugins: [
+            // new CopyPlugin({
+            //     patterns: [
+            //         {
+            //             from: "public",
+            //             to: "dist"
+            //         }
+            //     ]
+            // }),
+            new TsconfigPathsPlugin({ configFile: "./tsconfig.json" }),
+        ]
     }
 }
